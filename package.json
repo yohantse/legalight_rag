@@ -1,0 +1,27 @@
+{
+  "name": "rag-starter",
+  "version": "1.0.0",
+  "description": "Week 1 RAG pipeline: chunk, embed, store in pgvector, retrieve, generate.",
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx src/ingest.ts",
+    "query": "tsx src/query.ts",
+    "breakdown": "tsx src/breakdown.ts",
+    "server": "tsx src/server.ts",
+    "export-data": "tsx src/export.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@xenova/transformers": "^2.17.2",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

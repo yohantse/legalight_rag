@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment variables — never commit real API keys or DB credentials
+.env
+.env.local
+
+# Build output
+dist/
+
+# Local embedding model cache (downloaded on first run, no need to version it)
+.cache/
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
